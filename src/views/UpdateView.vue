@@ -9,11 +9,11 @@ interface Props {
 const props = defineProps<Props>();
 
 if (!Number.isInteger(props.todoId)) {
-    router.push("/");
+    await router.push("/");
 }
 
 if (!todoExists(props.todoId)) {
-    router.push("/");
+    await router.push("/");
 }
 
 const todo: Todo = getTodo(props.todoId)!;
