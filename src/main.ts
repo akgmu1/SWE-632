@@ -1,7 +1,3 @@
-// import './assets/main.css'
-
-// const bootstrap = require('bootstrap')
-
 import './scss/custom.scss'
 import 'bootstrap'
 
